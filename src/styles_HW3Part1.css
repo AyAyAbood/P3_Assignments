@@ -1,0 +1,41 @@
+.root {
+    -fx-background-color: dimgrey;
+}
+
+.thicc {
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+}
+
+.newLabels{
+    -fx-text-fill: black;
+    -fx-background-color: white;
+}
+
+.prof{
+    -fx-text-fill: white;
+}
+
+.lessThicc {
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+}
+
+.lessThiccNew {
+    -fx-font-size: 10pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.mylabels {
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: radial-gradient(radius 180%, aqua, derive(skyblue, -30%), derive(black, 30%));
+}

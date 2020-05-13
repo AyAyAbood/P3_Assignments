@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="721.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="p3hw5n.jpaPane2Controller">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="721.0" spacing="7.0" style="-fx-background-color: #c63bf5;">
+         <children>
+            <HBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="752.0" snapToPixel="false" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="568.0" prefWidth="364.0" spacing="12.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="319.0" text="Write your own Query here:">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="refresh" mnemonicParsing="false" onAction="#executeRefreshHandle" prefHeight="30.0" prefWidth="224.0" stylesheets="@styles.css" text="Refresh" />
+                           </children>
+                        </HBox>
+                        <TextArea fx:id="txtArea" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="318.0" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+                           <children>
+                              <Button fx:id="executeUpdate" mnemonicParsing="false" onAction="#executeUpdateHandle" stylesheets="@styles.css" text="executeUpdate" />
+                              <Label text="or">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="executeQuery" mnemonicParsing="false" onAction="#executeQueryHandle" stylesheets="@styles.css" text="executeQuery" />
+                           </children>
+                        </HBox>
+                        <Label text="Sample predefined queries, Select all Studnts who:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Button fx:id="buttonSelect1" mnemonicParsing="false" onAction="#buttonSelect1Handle" prefHeight="30.0" prefWidth="358.0" stylesheets="@styles.css" text="studying &quot;Software Engineering&quot; major">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonSelect2" mnemonicParsing="false" onAction="#buttonSelect2Handle" prefHeight="30.0" prefWidth="360.0" stylesheets="@styles.css" text="have excellent grades">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonSelect3" mnemonicParsing="false" onAction="#buttonSelect3Handle" prefHeight="30.0" prefWidth="361.0" stylesheets="@styles.css" text="passed (successed) in ascending order (names)">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="buttonSelect4" mnemonicParsing="false" onAction="#buttonSelect4Handle" prefHeight="28.0" prefWidth="362.0" stylesheets="@stylesSpecial.css" text="studying &quot;CS&quot; major, have grade less than 70%,increase their grades by 3">
+                           <font>
+                              <Font name="System Bold" size="5.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="tableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="323.0" style="-fx-font-size: 14px;">
+                     <columns>
+                        <TableColumn fx:id="tcID" prefWidth="29.0" text="ID" />
+                        <TableColumn fx:id="tcName" prefWidth="82.0" text="Name" />
+                        <TableColumn fx:id="tcMajor" prefWidth="161.0" text="Major" />
+                        <TableColumn fx:id="tcGrade" prefWidth="48.0" text="Grade" />
+                     </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <FlowPane.margin>
+            <Insets />
+         </FlowPane.margin>
+      </VBox>
+   </children>
+</FlowPane>
